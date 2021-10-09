@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 820px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  padding: 25px;
+  display: block;
+  margin: 25px;
+  text-align: center;
+  color: #ffbb00;
+  float: left;
+}
+
+.box-gradient-horizontal {
+  border: 5px solid;
+  border-image: linear-gradient(90deg, #c20d7c, #ffbb00 100%) 1;
+}
+
+.box-gradient-vertical {
+  border: 5px solid;
+  border-image: linear-gradient(0deg, #c20d7c, #ffbb00 100%) 1;
+}
+
+.box-gradient-diagonal {
+  border: 5px solid;
+  border-image: linear-gradient(45deg, #c20d7c, #ffbb00 100%) 1;
+}
+
+.box-gradient-diagonal-anglo-negativo {
+  border: 5px solid;
+  border-image: linear-gradient(-45deg, #c20d7c, #ffbb00 100%) 1;
+}
