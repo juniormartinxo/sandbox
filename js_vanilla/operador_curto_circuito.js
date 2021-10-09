@@ -1,6 +1,6 @@
 // Operador de curto circuito
 
-// Operado &&
+// Operador &&
 a1 = true && true // t && t returns true
 a2 = true && false // t && f returns false
 a3 = false && true // f && t returns false
@@ -11,10 +11,10 @@ a7 = 'Cat' && false // t && f returns false
 a8 = '' && false // f && f returns ""
 a9 = false && '' // f && f returns false
 
-console.log('\n\nOperado &&')
+console.log('\n\nOperador &&')
 console.log(a1, a2, a3, a4, a5, a6, a7, a8, a9)
 
-// Operado ||
+// Operador ||
 a1 = true || true // t && t returns true
 a2 = true || false // t && f returns false
 a3 = false || true // f && t returns false
@@ -25,5 +25,5 @@ a7 = 'Cat' || false // t && f returns false
 a8 = '' || false // f && f returns ""
 a9 = false || '' // f && f returns false
 
-console.log('\n\nOperado ||')
+console.log('\n\nOperador ||')
 console.log(a1, a2, a3, a4, a5, a6, a7, a8, a9, '\n\n')
