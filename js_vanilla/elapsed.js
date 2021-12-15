@@ -65,8 +65,24 @@ function howLongAgo2(elapsedMillisecondsCreation) {
   return `Há ${months} meses atrás`
 }
 
-console.log(howLongAgo2(1000))
-console.log(howLongAgo2(60000))
-console.log(howLongAgo2(3600000))
-console.log(howLongAgo2(86400000))
-console.log(howLongAgo2(2592000000))
+function howLongAgo3(elapsedMillisecondsCreation) {
+  const seconds = (elapsedMillisecondsCreation / 1000).toFixed(1)
+  const minutes = (elapsedMillisecondsCreation / 60000).toFixed(1)
+  const hours = (elapsedMillisecondsCreation / 3600000).toFixed(1)
+  const days = (elapsedMillisecondsCreation / 86400000).toFixed(1)
+  const months = (elapsedMillisecondsCreation / 2592000000).toFixed(1)
+
+  return {
+    [true]: `Há ${months} meses atrás`,
+    [days < 30]: `Há ${days} dias atrás`,
+    [hours < 24]: `Há ${hours} horas atrás`,
+    [minutes < 60]: `Há ${minutes} minutos atrás`,
+    [seconds < 60]: `Há ${seconds} segundos atrás`,
+  }.true
+}
+
+console.log(howLongAgo3(1000))
+console.log(howLongAgo3(60000))
+console.log(howLongAgo3(3600000))
+console.log(howLongAgo3(86400000))
+console.log(howLongAgo3(2592000000))
