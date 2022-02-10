@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "inquirer": "^8.2.0",
+    "prompt": "^1.2.1"
+  }
+}
