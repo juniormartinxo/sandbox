@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Kalam&family=Lekton&family=Montserrat+Subrayada&display=swap');
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #333;
+}
+
+.title {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 2em;
+  color: #ce5b78;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.letter {
+  display: inline-block;
+  text-align: center;
+  font-size: 6rem;
+  cursor: pointer;
+}
